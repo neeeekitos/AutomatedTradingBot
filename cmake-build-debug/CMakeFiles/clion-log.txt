@@ -1,0 +1,261 @@
+/opt/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nterekhov/CLionProjects/bitrader
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- JsonCpp Version: 1.8.0
+CMake Warning (dev) at ThirdParty/binance-cxx-api/ThirdParty/mbedtls/CMakeLists.txt:5 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    PROJECT_VERSION_MAJOR
+    PROJECT_VERSION_MINOR
+    PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.7.3", minimum required is "3") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+CMake Warning (dev) at ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeLists.txt:37 (target_sources):
+  Policy CMP0076 is not set: target_sources() command converts relative paths
+  to absolute.  Run "cmake --help-policy CMP0076" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+  An interface source of target "ssl_client2" has a relative path.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeLists.txt:44 (target_sources):
+  Policy CMP0076 is not set: target_sources() command converts relative paths
+  to absolute.  Run "cmake --help-policy CMP0076" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+  An interface source of target "ssl_server2" has a relative path.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeLists.txt:31 (target_sources):
+  Policy CMP0076 is not set: target_sources() command converts relative paths
+  to absolute.  Run "cmake --help-policy CMP0076" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+  An interface source of target "query_compile_time_config" has a relative
+  path.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /usr/bin/python3 (found version "3.7.3") 
+CMake Warning at ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:51 (message):
+  the curl cmake build system is poorly maintained.  Be aware
+
+
+-- curl version=[7.69.1-DEV]
+Found *nroff option: -- -man
+CMake Warning (dev) at /opt/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (MBEDTLS)
+  does not match the name of the calling package (MbedTLS).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/CMake/FindMbedTLS.cmake:10 (find_package_handle_standard_args)
+  ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:393 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find LibSSH2 (missing: LIBSSH2_LIBRARY LIBSSH2_INCLUDE_DIR) 
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1196 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/Makefile.inc.cmake
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeLists.txt:2 (transform_makefile_inc)
+
+
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1196 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/opts/Makefile.inc.cmake
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/opts/CMakeLists.txt:2 (transform_makefile_inc)
+
+
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1196 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/docs/cmdline-opts/Makefile.inc.cmake
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/docs/cmdline-opts/CMakeLists.txt:4 (transform_makefile_inc)
+
+
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1196 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/lib/Makefile.inc.cmake
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/lib/CMakeLists.txt:14 (transform_makefile_inc)
+
+
+-- Enabled features: SSL IPv6 unix-sockets libz AsynchDNS NTLM
+-- Enabled protocols: DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP
+-- Enabled SSL backends: mbedTLS
+CMake Error: Could not open file for write in copy operation /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/generated/CURLConfigVersion.cmake.tmp
+CMake Error: : System Error: Permission denied
+CMake Error at /opt/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/WriteBasicConfigVersionFile.cmake:49 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  /opt/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake:225 (write_basic_config_version_file)
+  ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1380 (write_basic_package_version_file)
+
+
+CMake Error: Could not open file for write in copy operation /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/generated/CURLConfig.cmake.tmp
+CMake Error: : System Error: Permission denied
+CMake Error at /opt/clion-2020.3.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakePackageConfigHelpers.cmake:330 (configure_file):
+  configure_file Problem configuring file
+Call Stack (most recent call first):
+  ThirdParty/binance-cxx-api/ThirdParty/curl/CMakeLists.txt:1389 (configure_package_config_file)
+
+
+CMake Warning (dev) at ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeLists.txt:17 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    PROJECT_VERSION_MAJOR
+    PROJECT_VERSION_MINOR
+    PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Compiled with LWS_WITH_DIR and LWS_WITH_LEJP_CONF
+-- CMAKE_TOOLCHAIN_FILE=''
+fatal: aucun nom trouvé, impossible de décrire quoi que ce soit.
+Git commit hash: 
+Compiling with SSL support
+MBEDTLS include dir: /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/include;/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/include
+MBEDTLS libraries: 
+Searching for OpenSSL executable and dlls
+OpenSSL executable: 
+ GENCERTS = 1
+Generating SSL Certificates for the test-server...
+Generating a RSA private key
+......+++++
+.+++++
+writing new private key to '/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/libwebsockets-test-server.key.pem'
+req: Can't open "/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/libwebsockets-test-server.key.pem" for writing, Permission denied
+CMake Warning at ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeLists.txt:2315 (message):
+  !!! Failed to generate SSL certificate for Test Server!!!:
+
+  OpenSSL return code = 1
+
+
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeLists.txt:2778 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/libwebsockets.pc
+
+
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeLists.txt:2795 (file):
+  file failed to open for writing (Permission denied):
+
+    /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/libwebsockets_static.pc
+
+
+CMake Error: Could not open file for write in copy operation /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeFiles/LibwebsocketsConfig.cmake.tmp
+CMake Error: : System Error: Permission denied
+CMake Error at ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/CMakeLists.txt:2859 (configure_file):
+  configure_file Problem configuring file
+
+
+-- Looking for RPMTools... - found rpmuild is /usr/bin/rpmbuild
+-- RPMTools:: Using RPM_ROOTDIR=/home/nterekhov/CLionProjects/bitrader/RPM
+-- Simple copy spec file <scripts/libwebsockets.spec> --> </home/nterekhov/CLionProjects/bitrader/RPM/SPECS/libwebsockets.spec>
+---------------------------------------------------------------------
+  Settings:  (For more help do cmake -LH <srcpath>)
+---------------------------------------------------------------------
+ LWS_WITH_STATIC = ON
+ LWS_WITH_SHARED = ON
+ LWS_WITH_SSL = ON (SSL Support)
+ LWS_SSL_CLIENT_USE_OS_CA_CERTS = 1
+ LWS_WITH_WOLFSSL = OFF (wolfSSL/CyaSSL replacement for OpenSSL)
+ LWS_WITH_MBEDTLS = ON (mbedTLS replacement for OpenSSL)
+ LWS_WITHOUT_BUILTIN_SHA1 = OFF
+ LWS_WITHOUT_BUILTIN_GETIFADDRS = OFF
+ LWS_WITHOUT_CLIENT = OFF
+ LWS_WITHOUT_SERVER = OFF
+ LWS_LINK_TESTAPPS_DYNAMIC = OFF
+ LWS_WITHOUT_TESTAPPS = OFF
+ LWS_WITHOUT_TEST_SERVER = OFF
+ LWS_WITHOUT_TEST_SERVER_EXTPOLL = OFF
+ LWS_WITHOUT_TEST_PING = OFF
+ LWS_WITHOUT_TEST_CLIENT = OFF
+ LWS_WITHOUT_EXTENSIONS = ON
+ LWS_WITHOUT_DAEMONIZE = ON
+ LWS_WITH_LIBEV = OFF
+ LWS_WITH_LIBUV = OFF
+ LWS_WITH_LIBEVENT = OFF
+ LWS_WITH_GLIB = OFF
+ LWS_IPV6 = OFF
+ LWS_UNIX_SOCK = OFF
+ LWS_WITH_HTTP2 = 1
+ LWS_ROLE_MQTT = ON
+ LWS_SSL_SERVER_WITH_ECDH_CERT = OFF
+ LWS_MAX_SMP = 1
+ LWS_HAVE_PTHREAD_H = 1
+ LWS_WITH_CGI = OFF
+ LWS_HAVE_OPENSSL_ECDH_H = 
+ LWS_HAVE_SSL_CTX_set1_param = 
+ LWS_HAVE_RSA_SET0_KEY = 
+ LWS_WITH_HTTP_PROXY = OFF
+ LIBHUBBUB_LIBRARIES = 
+ PLUGINS = 
+ LWS_WITH_ACCESS_LOG = OFF
+ LWS_WITH_SERVER_STATUS = OFF
+ LWS_WITH_LEJP = ON
+ LWS_WITH_LEJP_CONF = ON
+ LWS_WITH_GENERIC_SESSIONS = OFF
+ LWS_STATIC_PIC = ON
+ LWS_WITH_RANGES = OFF
+ LWS_PLAT_OPTEE = OFF
+ LWS_PLAT_FREERTOS = OFF
+ LWS_WITH_ZIP_FOPS = OFF
+ LWS_AVOID_SIGPIPE_IGN = OFF
+ LWS_WITH_STATS = OFF
+ LWS_WITH_SOCKS5 = OFF
+ LWS_HAVE_SYS_CAPABILITY_H = 
+ LWS_HAVE_LIBCAP = 
+ LWS_WITH_PEER_LIMITS = OFF
+ LWS_HAVE_ATOLL = 1
+ LWS_HAVE__ATOI64 = 
+ LWS_HAVE_STAT32I64 = 
+ LWS_HAS_INTPTR_T = 1
+ LWS_WITH_EXPORT_LWSTARGETS = OFF
+ LWS_WITH_ABSTRACT = 
+---------------------------------------------------------------------
+CMake Warning (dev) at ThirdParty/tgbot-cpp/CMakeLists.txt:2 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    PROJECT_VERSION_MAJOR
+    PROJECT_VERSION_MINOR
+    PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found suitable version "7.64.0", minimum required is "7.56.0")  
+-- Found Boost: /usr/include (found suitable version "1.67.0", minimum required is "1.59.0") found components: system 
+-- Configuring incomplete, errors occurred!
+See also "/home/nterekhov/CLionProjects/bitrader/CMakeFiles/CMakeOutput.log".
+See also "/home/nterekhov/CLionProjects/bitrader/CMakeFiles/CMakeError.log".
+CMake Error: Unable to open check cache file for write. /home/nterekhov/CLionProjects/bitrader/CMakeFiles/cmake.check_cache

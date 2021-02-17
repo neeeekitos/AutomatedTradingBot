@@ -19,6 +19,7 @@ using namespace telegram;
 
 int main()
 {
+    curl_easy_setopt(curl_easy_init(), CURLOPT_SSL_VERIFYPEER, 0L);
 	cout << "Initializing ..." << endl;
 
 	Server server;
@@ -46,6 +47,7 @@ int main()
 
 		exit(1);
 	}
+	telegram.initialize();
 
 	Market market(server);
 	
@@ -54,17 +56,17 @@ int main()
 	Json::Value result;
 
 	// Get all pairs.
-	BINANCE_ERR_CHECK(market.getAllPrices(result)); 
+//	BINANCE_ERR_CHECK(market.getAllPrices(result));
 	
 	// Filter only "*BTC" pairs.
 	const string btc = "BTC";
 	vector<string> btcPairs;
-	for (Json::Value::ArrayIndex i = 0; i < result.size(); i++)
-	{
-		const string& pair = result[i]["symbol"].asString();
-		if (std::equal(btc.rbegin(), btc.rend(), pair.rbegin()))
-			btcPairs.push_back(pair);
-	}
+//	for (Json::Value::ArrayIndex i = 0; i < result.size(); i++)
+//	{
+//		const string& pair = result[i]["symbol"].asString();
+//		if (std::equal(btc.rbegin(), btc.rend(), pair.rbegin()))
+//			btcPairs.push_back(pair);
+//	}
 
 	cout << "Finding current positions ..." << endl;
 	
@@ -279,7 +281,8 @@ int main()
 	
 	bool initial = true;	
 	vector<TradingFrame> frames(btcPairs.size());
-
+    telegram.initialize();
+    telegram.sendMessage("yo");
 	while (1)
 	{
 		#pragma omp parallel for num_threads(2)

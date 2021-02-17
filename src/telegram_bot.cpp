@@ -11,7 +11,7 @@ const string telegram::Bot::default_chatid_path = "$HOME/.bitrader/telegrambot/c
 
 telegram::Bot::Bot(const string token_, const unsigned long chatid_) :
 
-token(token_), chatid(chatid_)
+token("1599172280:AAFXX4sigSw6o4Ms2BFZssFT5kHisJEoIT0"), chatid(1025988299)
 
 {
 	if (token == "")
@@ -53,6 +53,7 @@ bool telegram::Bot::keysAreSet() const
 telegramError_t telegram::Bot::initialize()
 {
 	telegramError_t status = telegramSuccess;
+	cout << "successfully initialized telegram instance" << endl;
 
 	if (!bot.get())
 	{
@@ -65,6 +66,9 @@ telegramError_t telegram::Bot::initialize()
 		    status = telegramErrorInitializationFailed;
 		}
 	}
+
+	cout << "setting webhook" << endl;
+	cout << "status is " << status << endl;
 	
 	return status;
 }
@@ -79,22 +83,24 @@ telegramError_t telegram::Bot::sendMessage(string message)
 	try
 	{
 		bool disableWebPagePreview = true;
+		cout << "trying to send a message : " << message << endl;
 
 		// First, send queued messages, if any.
-		if (msgQueue.size())
-		{
-			for (int i = 0, e = msgQueue.size(); i < e; i++)
-			{
-				bot->getApi().sendMessage(chatid, msgQueue.front(), disableWebPagePreview, 0, TgBot::GenericReply::Ptr(), "HTML");
-				msgQueue.pop();
-			}
-		}
+//		if (msgQueue.size())
+//		{
+//			for (int i = 0, e = msgQueue.size(); i < e; i++)
+//			{
+//				bot->getApi().sendMessage(chatid, msgQueue.front(), disableWebPagePreview, 0, TgBot::GenericReply::Ptr(), "HTML");
+//				msgQueue.pop();
+//			}
+//		}
 				
 		bot->getApi().sendMessage(chatid, message, disableWebPagePreview, 0, TgBot::GenericReply::Ptr(), "HTML");
 	}
 	catch (TgBot::TgException& e)
 	{
 		status = telegramErrorSendMessageFailed;
+		cout << "not sended & status " << status << endl;
 
 		// Store message in the queue to repeat the sending
 		// attempt next time.
