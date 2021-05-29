@@ -6,8 +6,13 @@
 #include <string>
 #include <vector>
 
+
+
+
 #include "binance.h"
-#include "telegram.h"
+//#include "telegram.h"
+#include "../ThirdParty/tgbot-cpp/include/tgbot/tgbot.h"
+
 
 // Pumping threshold
 #define THRESHOLD 1.02
@@ -15,12 +20,27 @@
 
 using namespace binance;
 using namespace std;
-using namespace telegram;
+//using namespace telegram;
+using namespace TgBot;
 
 int main()
 {
-    curl_easy_setopt(curl_easy_init(), CURLOPT_SSL_VERIFYPEER, 0L);
-	cout << "Initializing ..." << endl;
+//    string token(getenv("TOKEN"));
+//    int chatId = stoi(getenv("CHAT_ID"));
+//    printf("Token: %s\n", token.c_str());
+//    printf("Chat ID: %d\n", chatId);
+
+    string token = "1764216049:AAGeC6Qfnp1PD_uV3weMjuZ4NfLGAFhd6AQ";
+    int chatId = 1025988299;
+
+    cout << "sup" << endl;
+
+    Bot bot(token);
+    cout << "sup" << endl;
+    bot.getApi().sendMessage(chatId, "Hi!");gu
+    bot.getEvents().onCommand("start", [&bot](Message::Ptr message) {
+        bot.getApi().sendMessage(message->chat->id, "Hi!");
+    });
 
 	Server server;
 
@@ -36,40 +56,27 @@ int main()
 		exit(1);
 	}
 
-	Bot telegram;
-	if (!telegram.keysAreSet())
-	{
-		fprintf(stderr, "\nCannot find the token/chatid keys pair for Telegram account!\n");
-		fprintf(stderr, "The user should either provide them to Telegram constructor,\n");
-		fprintf(stderr, "or in the following files: %s, %s\n\n",
-			telegram::Bot::default_token_path.c_str(),
-			telegram::Bot::default_chatid_path.c_str());
-
-		exit(1);
-	}
-	telegram.initialize();
-
 	Market market(server);
-	
+
 	cout << "Getting all *BTC pairs ..." << endl;
 
 	Json::Value result;
 
 	// Get all pairs.
-//	BINANCE_ERR_CHECK(market.getAllPrices(result));
-	
+	BINANCE_ERR_CHECK(market.getAllPrices(result));
+
 	// Filter only "*BTC" pairs.
 	const string btc = "BTC";
 	vector<string> btcPairs;
-//	for (Json::Value::ArrayIndex i = 0; i < result.size(); i++)
-//	{
-//		const string& pair = result[i]["symbol"].asString();
-//		if (std::equal(btc.rbegin(), btc.rend(), pair.rbegin()))
-//			btcPairs.push_back(pair);
-//	}
+	for (Json::Value::ArrayIndex i = 0; i < result.size(); i++)
+	{
+		const string& pair = result[i]["symbol"].asString();
+		if (std::equal(btc.rbegin(), btc.rend(), pair.rbegin()))
+			btcPairs.push_back(pair);
+	}
 
 	cout << "Finding current positions ..." << endl;
-	
+
 	// Get account info.
 	BINANCE_ERR_CHECK(account.getInfo(result));
 
@@ -77,13 +84,13 @@ int main()
 	{
 		// Amount in currency.
 		double amount;
-		
+
 		// The purchase value of amount, according to trading history.
 		double value;
 	};
 
 	map<string, Position> positions;
-	
+
 	// Get amounts for all positions in accout.
 	const Json::Value balances = result["balances"];
 	for (Json::Value::ArrayIndex i = 0, e = balances.size(); i < e; i++)
@@ -112,10 +119,10 @@ int main()
 
 		const string side = order["side"].asString();
 		if (side != "SELL") continue;
-	
+
 		const double origQty = atof(order["origQty"].asString().c_str());
 		const double executedQty = atof(order["executedQty"].asString().c_str());
-	
+
 		positions[currency].amount += origQty - executedQty;
 	}
 
@@ -123,7 +130,7 @@ int main()
 		cout << i->first << " : " << i->second.amount << endl;
 
 	cout << "Finding positions purchase values ..." << endl;
-	
+
 	// Get all orders for currencies we are in position for
 	// and calculate the purchase price (in BTC) of the available amount.
 	double totalValue = 0;
@@ -136,9 +143,9 @@ int main()
 
 		const string symbol = currency + "BTC";
 		const double amount = i->second.amount;
-		
+
 		if (amount == 0) continue;
-				
+
 		// TODO limited to 500 transactions
 		account.getAllOrders(result, symbol.c_str());
 
@@ -151,7 +158,7 @@ int main()
 			{
 			    return price * amount < other.price * other.amount;
 			}
-			
+
 			Purchase(const double price_, const double amount_) : price(price_), amount(amount_) { }
 		};
 
@@ -160,14 +167,14 @@ int main()
 		for (Json::Value::ArrayIndex j = 0, je = result.size(); j < je; j++)
 		{
 			const Json::Value& order = result[j];
-			
+
 			const string side = order["side"].asString();
 			if (side == "BUY")
 			{
 				const double price = atof(order["price"].asString().c_str());
 				const double amount = atof(order["executedQty"].asString().c_str());
-				
-				purchases.insert(Purchase(price, amount));	
+
+				purchases.insert(Purchase(price, amount));
 			}
 			else if (side == "SELL")
 			{
@@ -176,7 +183,7 @@ int main()
 
 				// Substract from purchases until done.
 				while (1)
-				{				
+				{
 					// Find purchase with the largest (worst) price.
 					set<Purchase>::iterator maxPurchase = purchases.begin();
 					for (set<Purchase>::iterator k = purchases.begin(), ke = purchases.end(); k != ke; k++)
@@ -184,7 +191,7 @@ int main()
 						if ((k->price > maxPurchase->price) && (maxPurchase->amount > 0))
 							maxPurchase = k;
 					}
-					
+
 					if (maxPurchase->amount < amount)
 					{
 						amount -= maxPurchase->amount;
@@ -201,19 +208,19 @@ int main()
 				}
 			}
 		}
-		
+
 		// Finally, calculate the purchase price of unsold amount.
 		double value = 0;
 		double totalAmount = 0;
 		for (set<Purchase>::iterator k = purchases.begin(), ke = purchases.end(); k != ke; k++)
-		{	
+		{
 			value += k->price * k->amount;
 			totalAmount += k->amount;
 		}
 
 #if 0
 		// Some balances could be seeded, e.g. by new coins.
-		// So, we should expect some positions could appear by other means than trading.		
+		// So, we should expect some positions could appear by other means than trading.
 		if (fabs(totalAmount - positions[currency].amount) > numeric_limits<double>::epsilon())
 		{
 			// Do not check BNB: it could be used also used to pay comissions,
@@ -226,20 +233,20 @@ int main()
 			}
 		}
 #endif
-		
+
 		positions[currency].value = value;
-		
+
 		cout << currency << " : " << value << " BTC" << endl;
-		
+
 		totalValue += value;
 	}
-	
+
 	cout << "Total account purchase value : " << totalValue << " BTC" << endl;
 
 	cout << "Finding positions actual values ..." << endl;
 
 	double totalActualValue = 0;
-	BINANCE_ERR_CHECK(market.getAllPrices(result)); 
+	BINANCE_ERR_CHECK(market.getAllPrices(result));
 	for (Json::Value::ArrayIndex i = 0; i < result.size(); i++)
 	{
 		const string& pair = result[i]["symbol"].asString();
@@ -252,7 +259,7 @@ int main()
 		{
 			double price = atof(result[i]["price"].asString().c_str());
 			double value = positions[currency].amount * price;
-			
+
 			double ratio = value / positions[currency].value * 100 - 100;
 
 			cout << currency << " : " << value << " BTC (";
@@ -278,11 +285,11 @@ int main()
 		double avgPrice;
 		bool hot;
 	};
-	
-	bool initial = true;	
+
+	bool initial = true;
 	vector<TradingFrame> frames(btcPairs.size());
-    telegram.initialize();
-    telegram.sendMessage("yo");
+//    telegram.initialize();
+//    telegram.sendMessage("yo");
 	while (1)
 	{
 		#pragma omp parallel for num_threads(2)
@@ -299,12 +306,12 @@ int main()
 			while (1)
 			{
 				binanceError_t status = account.getTrades(result, pair.c_str());
-				
+
 				if (status == binanceSuccess) break;
-				
+
 				fprintf(stderr, "%s\n", binanceGetErrorString(status));
 			}
-			
+
 			// Get the newest id across recent trades.
 			long idMax = 0, timeMax;
 			for (Json::Value::ArrayIndex j = 0; j < result.size(); j++)
@@ -330,10 +337,10 @@ int main()
 				totalQty += qty;
 				avgPrice += price * qty;
 			}
-			
+
 			if (totalQty > 0)
 				avgPrice /= totalQty;
-			
+
 			// If we are on initial step, just record the result.
 			if (initial)
 			{
@@ -343,7 +350,7 @@ int main()
 
 				continue;
 			}
-			
+
 			// Re-calculate the average price, accounting only trades
 			// that took place after the last seen frame's idMax.
 			idMax = 0;
@@ -366,9 +373,9 @@ int main()
 			}
 
 			if (!nonzero) continue;
-			
+
 			avgPrice /= totalQty;
-			
+
 			// Find update for the current time stamp.
 			int buy = -1;
 			bool hot = false;
@@ -380,13 +387,13 @@ int main()
 				const string currency(pair.c_str(), pair.size() - 3);
 				const string symbol = currency + "_BTC";
 
-				msg << "<a href=\"https://www.binance.com/en/trade/" << symbol << "\">" << pair << "</a> +" <<
+				msg << "https://www.binance.com/en/trade/" << symbol << "\r\n" << pair << " +" <<
 					(avgPrice / frames[i].avgPrice * 100.0 - 100) << "% 📈";
 
 				// Rocket high?
 				if (avgPrice >= THRESHOLD_ROCKET * frames[i].avgPrice)
 					 msg << " 🚀";
-					
+
 				// Add a note, if we are in position for this currency.
 				if (positions.find(currency) != positions.end())
 				{
@@ -394,7 +401,7 @@ int main()
 					if (amount != 0)
 					{
 						msg << " POSITION: " << amount;
-						
+
 						if (avgPrice * amount > THRESHOLD * positions[currency].value)
 						{
 							double profit = avgPrice * amount / positions[currency].value * 100 - 100;
@@ -415,7 +422,7 @@ int main()
 				hot = true;
 
 				// Communicate the result over the Telegram.
-				telegram.sendMessage(msg.str());
+                bot.getApi().sendMessage(chatId, msg.str(), true);
 			}
 			else
 			{
@@ -430,13 +437,11 @@ int main()
 			frames[i].totalQty = totalQty;
 			frames[i].avgPrice = avgPrice;
 			frames[i].hot = hot;
-		
+
 			cout << pair << " : " << frames[i].idMax << " : " << frames[i].avgPrice << endl;
 		}
-	
+
 		initial = false;
 	}
-
-	return 0;
 }
 

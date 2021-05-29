@@ -3,6 +3,7 @@
 #include <fstream>
 #include <wordexp.h>
 
+
 using namespace telegram;
 using namespace std;
 
@@ -11,11 +12,11 @@ const string telegram::Bot::default_chatid_path = "$HOME/.bitrader/telegrambot/c
 
 telegram::Bot::Bot(const string token_, const unsigned long chatid_) :
 
-token("1599172280:AAFXX4sigSw6o4Ms2BFZssFT5kHisJEoIT0"), chatid(1025988299)
-
+token("1764216049:AAGeC6Qfnp1PD_uV3weMjuZ4NfLGAFhd6AQ"), chatid(1025988299)
 {
 	if (token == "")
 	{
+	    cout << "hello" << endl;
 		wordexp_t p;
 		char** w;
 		wordexp(default_token_path.c_str(), &p, 0);
@@ -68,6 +69,7 @@ telegramError_t telegram::Bot::initialize()
 	}
 
 	cout << "setting webhook" << endl;
+//    bot->getApi().setWebhook("https:///hooks/", TgBot::InputFile::fromFile("cert.pem", "application/x-pem-file"), 40);
 	cout << "status is " << status << endl;
 	
 	return status;

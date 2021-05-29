@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =  -fopenmp -g   -std=gnu++11
 
-CXX_DEFINES = -DCURL_STATICLIB
+CXX_DEFINES = -DCURL_STATICLIB -DHAVE_CURL
 
-CXX_INCLUDES = -I/home/nterekhov/CLionProjects/bitrader/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/tgbot-cpp/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/../../include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/include -isystem /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/include -isystem /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/include 
+CXX_INCLUDES = -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/home/nterekhov/CLionProjects/bitrader/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/tgbot-cpp/include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/../../include -I/home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/curl/include -isystem /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/include -isystem /home/nterekhov/CLionProjects/bitrader/ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/include 
 

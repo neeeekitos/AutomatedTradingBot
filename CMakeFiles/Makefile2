@@ -88,7 +88,7 @@ all: CMakeFiles/bitrader.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/bitrader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bitrader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : CMakeFiles/bitrader.dir/rule
@@ -162,7 +162,7 @@ all: ThirdParty/binance-cxx-api/CMakeFiles/example.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/CMakeFiles/example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/CMakeFiles/example.dir/rule
@@ -204,7 +204,7 @@ all: ThirdParty/binance-cxx-api/CMakeFiles/binance-cxx-api.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/CMakeFiles/binance-cxx-api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/CMakeFiles/binance-cxx-api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/CMakeFiles/binance-cxx-api.dir/rule
@@ -288,12 +288,12 @@ ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/preinstall:
 ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/all:
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=25 "Built target jsoncpp_lib_static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target jsoncpp_lib_static"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/rule
@@ -877,12 +877,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target aescrypt2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=1 "Built target aescrypt2"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/aes/CMakeFiles/aescrypt2.dir/rule
@@ -2019,12 +2019,12 @@ ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_clien
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target dtls_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=17 "Built target dtls_client"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_client.dir/rule
@@ -2087,12 +2087,12 @@ ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_serve
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=17 "Built target dtls_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target dtls_server"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/ssl/CMakeFiles/dtls_server.dir/rule
@@ -2279,12 +2279,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/ze
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=1 "Built target benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target benchmark"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/programs/test/CMakeFiles/benchmark.dir/rule
@@ -3397,12 +3397,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_rsa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=16 "Built target crypto.test_suite_rsa"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_rsa.dir/rule
@@ -4133,12 +4133,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_cipher.misc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=7 "Built target crypto.test_suite_cipher.misc"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.misc.dir/rule
@@ -4421,12 +4421,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_pk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=13 "Built target crypto.test_suite_pk"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pk.dir/rule
@@ -4453,12 +4453,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_asn1parse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=4 "Built target crypto.test_suite_asn1parse"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1parse.dir/rule
@@ -4517,12 +4517,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=16 "Built target crypto.test_suite_shax"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_shax"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_shax.dir/rule
@@ -4677,12 +4677,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=4 "Built target crypto.test_suite_asn1write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_asn1write"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_asn1write.dir/rule
@@ -5029,12 +5029,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=7 "Built target crypto.test_suite_cipher.nist_kw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_cipher.nist_kw"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_cipher.nist_kw.dir/rule
@@ -5061,12 +5061,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_gcm.aes192_en"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=10 "Built target crypto.test_suite_gcm.aes192_en"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes192_en.dir/rule
@@ -5125,12 +5125,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=13 "Built target crypto.test_suite_pkcs1_v15"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_pkcs1_v15"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_pkcs1_v15.dir/rule
@@ -5221,12 +5221,12 @@ clean: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/cry
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/all: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/CMakeFiles/mbedcrypto.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=10 "Built target crypto.test_suite_gcm.aes256_de"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num= "Built target crypto.test_suite_gcm.aes256_de"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/tests/CMakeFiles/crypto.test_suite_gcm.aes256_de.dir/rule
@@ -6020,12 +6020,12 @@ ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/preinstall: ThirdParty/b
 ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/all: ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/opts/CMakeFiles/opts-html.dir/all
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/depend
 	$(MAKE) -f ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/build.make ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=21,22,23,24 "Built target html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nterekhov/CLionProjects/bitrader/CMakeFiles --progress-num=21,22,23,24,25 "Built target html"
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/all
 
 # Build rule for subdir invocation for target.
 ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nterekhov/CLionProjects/bitrader/CMakeFiles 0
 .PHONY : ThirdParty/binance-cxx-api/ThirdParty/curl/docs/libcurl/CMakeFiles/html.dir/rule

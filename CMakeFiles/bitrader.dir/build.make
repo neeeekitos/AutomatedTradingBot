@@ -113,6 +113,10 @@ bitrader: ThirdParty/binance-cxx-api/libbinance-cxx-api.so
 bitrader: ThirdParty/tgbot-cpp/libTgBot.a
 bitrader: /usr/lib/gcc/x86_64-linux-gnu/8/libgomp.so
 bitrader: /usr/lib/x86_64-linux-gnu/libpthread.so
+bitrader: /usr/lib/x86_64-linux-gnu/libssl.so
+bitrader: /usr/lib/x86_64-linux-gnu/libcrypto.so
+bitrader: /usr/lib/x86_64-linux-gnu/libboost_system.so
+bitrader: /usr/lib/x86_64-linux-gnu/libcurl.so
 bitrader: ThirdParty/binance-cxx-api/ThirdParty/libwebsockets/lib/libwebsockets.a
 bitrader: ThirdParty/binance-cxx-api/ThirdParty/jsoncpp/src/lib_json/libjsoncpp.a
 bitrader: ThirdParty/binance-cxx-api/ThirdParty/curl/lib/libcurl-d.a
@@ -121,6 +125,8 @@ bitrader: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/library/libmbedx509.a
 bitrader: ThirdParty/binance-cxx-api/ThirdParty/mbedtls/crypto/library/libmbedcrypto.a
 bitrader: /usr/lib/x86_64-linux-gnu/libz.so
 bitrader: /usr/lib/x86_64-linux-gnu/libz.so
+bitrader: /usr/lib/x86_64-linux-gnu/libssl.so
+bitrader: /usr/lib/x86_64-linux-gnu/libcrypto.so
 bitrader: /usr/lib/x86_64-linux-gnu/libboost_system.so
 bitrader: /usr/lib/x86_64-linux-gnu/libcurl.so
 bitrader: CMakeFiles/bitrader.dir/link.txt
